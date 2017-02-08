@@ -1,4 +1,6 @@
-# LetsencryptRack
+# letsencrypt_rack
+
+A rack middleware to serve the letsencrypt challenge request answer, provided in an environment variable. Best used with https://github.com/xijo/letsencrypt_heroku.
 
 ## Installation
 
