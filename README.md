@@ -18,6 +18,15 @@ You can check that the middleware is used correctly with:
 
     $ rake middleware
 
+
+If you use not rails web app (sinatra, hanami, grape, etc) you must add `LetsencryptRack::Middleware` middleware to your `config.ru` file:
+
+```ruby
+# in config.ru
+
+use LetsencryptRack::Middleware
+```
+
 ## Usage
 
 Provide `LETSENCRYPT_RESPONSE` as environment variable within your server. For heroku you can use the toolbelt to set it:
