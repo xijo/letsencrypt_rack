@@ -10,20 +10,18 @@ Add this line to your application's Gemfile.
 gem 'letsencrypt_rack'
 ```
 
-And then execute:
-
-    $ bundle
+### Rails
 
 You can check that the middleware is used correctly with:
 
     $ rake middleware
 
+### Sinatra, Hanami, Grape
 
-If you use not rails web app (sinatra, hanami, grape, etc) you must add `LetsencryptRack::Middleware` middleware to your `config.ru` file:
+You'll need to insert `LetsencryptRack::Middleware` to your `config.ru`:
 
 ```ruby
 # in config.ru
-
 use LetsencryptRack::Middleware
 ```
 
